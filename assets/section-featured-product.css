@@ -1,0 +1,100 @@
+.featured-product .product__media-list {
+  width: 100%;
+  margin: 0;
+  padding-top: 2px;
+  border-bottom: 1px solid #000000;
+}
+.featured-product .product-media-container {
+  margin-bottom: var(--media-shadow-vertical-offset);
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.featured-product .product__media-item {
+  padding-left: 0;
+  border-top: 1px solid #000000;
+  border-right: 0.5px solid #000000;
+  border-left: 0.5px solid #000000;
+}
+.featured-product .placeholder-svg {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.background-secondary .featured-product {
+  padding: 2.5rem;
+}
+.featured-product .share-button:nth-last-child(2) {
+  display: inline-flex;
+}
+.share-button + .product__view-details {
+  display: inline-flex;
+  float: right;
+  align-items: center;
+  min-height: 4.4rem;
+}
+.share-button + .product__view-details::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (min-width: 750px) {
+  .featured-product .product__media-item {
+    padding-bottom: 0;
+  }
+  .background-secondary .featured-product {
+    padding: 5rem;
+  }
+  .product--right .product__media-wrapper {
+    order: 2;
+  }
+}
+@media screen and (min-width: 990px) {
+  .background-secondary
+    .featured-product:not(.product--no-media)
+    > .product__info-wrapper {
+    padding: 0 0 0 5rem;
+  }
+  .background-secondary
+    .featured-product:not(.product--no-media).product--right
+    > .product__info-wrapper {
+    padding: 0 5rem 0 0;
+  }
+  .featured-product:not(.product--no-media) > .product__info-wrapper {
+    padding: 0 7rem;
+  }
+  .background-secondary .featured-product {
+    padding: 6rem 7rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.page-width.section-template--17035541905481__featured_product_YUC3Ac-padding {
+  padding: 0;
+}
+
+.featured-product .product__media-item .product-media-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .featured-product .product__media-list {
+    flex-direction: column; /* For larger screens */
+  }
+}
+
+.product__media.media.media--transparent {
+  aspect-ratio: 1 / 1;
+  padding-top: 0;
+}
+.image-magnify-none {
+  object-position: contain; /* Example: position the top center of the image */
+}
+
+ul#Slider-Gallery-template--17035541905481__featured_product_YUC3Ac {
+  gap: 0;
+}
